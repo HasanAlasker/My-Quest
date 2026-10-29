@@ -1,8 +1,16 @@
-import "./App.css";
-import { Button } from "./components/ui/button";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./screens/Home";
+import NotFound from "./screens/NotFound";
 
 function App() {
-  return <div className="h-full font-bold text-6xl">My Quest <Button>Hello Nigger</Button> </div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/*" element={<NotFound />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
