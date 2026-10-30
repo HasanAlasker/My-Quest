@@ -8,7 +8,9 @@ export default function UserNav() {
 
   return (
     <nav className=" z-100 flex items-center justify-between sticky top-0 backdrop-blur-lg py-3">
-      <div className="font-bold text-md md:text-xl">AlaskerDev</div>
+      <a href="/" className="font-bold text-md md:text-xl">
+        AlaskerDev
+      </a>
       <Button onClick={() => setMenu(true)} variant={"outline"}>
         <Menu />
       </Button>

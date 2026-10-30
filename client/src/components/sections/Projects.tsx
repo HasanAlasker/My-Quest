@@ -19,12 +19,12 @@ const projects: Project[] = [
     link: "https://matjr.alasker.dev",
   },
   {
-    name: "MKTSHRT",
+    name: "Servio — Car Maintenance Tracker.",
     description:
-      "Turn long URLs into clean, shareable links with downloadable QR codes.",
+      "Servio is a cross-platform mobile application that helps drivers stay on top of vehicle maintenance, insurance renewals, and license deadlines — all in one place.",
     image:
-      "https://github.com/HasanAlasker/MKTSHRT/blob/main/public/preview.png?raw=true",
-    link: "https://mktshrt.netlify.app/",
+      "https://github.com/HasanAlasker/Servio-Car-Service-Tracker/raw/main/Client/Servio/assets/preview1.png",
+    link: "https://servio.expo.app/",
   },
 ];
 
@@ -57,7 +57,7 @@ export default function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-6xl py-20 lg:py-28">
       <h2 className="text-balance text-3xl font-bold tracking-tight sm:text-4xl">
-        Our work
+        Selected work
       </h2>
 
       {projects.length === 0 ? (

@@ -36,7 +36,7 @@ export default function Hero() {
               <Button size="lg" className="w-full sm:w-auto">
                 Book free call
               </Button>
-              <a href="#work">
+              <a href="#projects">
                 <Button
                   size="lg"
                   variant="secondary"
