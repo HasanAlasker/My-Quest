@@ -5,11 +5,18 @@ interface Props {
   title: string;
   icon: IconName;
   to: string;
+  onClose: () => void;
 }
-export default function MenuOptionBtn({ title, icon, to }: Props) {
+export default function MenuOptionBtn({ title, icon, to, onClose }: Props) {
   return (
-    <Button variant={'ghost'} onClick={() => console.log(to)} className={'flex justify-between'}>
-      {title} <DynamicIcon name={icon} />
-    </Button>
+    <a href={to} onClick={onClose} className="flex w-full">
+      <Button
+        variant={"ghost"}
+        onClick={() => console.log(to)}
+        className={"flex justify-between w-full"}
+      >
+        {title} <DynamicIcon name={icon} />
+      </Button>
+    </a>
   );
 }

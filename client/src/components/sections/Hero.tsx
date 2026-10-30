@@ -9,7 +9,7 @@ export default function Hero() {
     <section className="relative isolate overflow-hidden">
       <FadedGrid />
 
-      <div className="mx-auto flex h-[90svh] max-w-6xl flex-col md:pr-4">
+      <div className="mx-auto flex min-h-[90svh] max-w-6xl flex-col md:pr-4">
         {/* Main */}
         <div className="grid flex-1 items-center gap-14 py-10 lg:grid-cols-2 lg:gap-10 lg:py-0">
           {/* Copy */}
@@ -23,12 +23,13 @@ export default function Hero() {
             </Badge>
 
             <h1 className="mt-6 text-balance text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
-              Websites that turn visitors into customers
+              Your brand, built into a website
             </h1>
 
             <p className="mt-5 max-w-prose text-pretty text-base text-muted-foreground sm:text-lg">
-              We design and build fast, clear websites for businesses that need
-              to convert. You get one team from first sketch to launch day.
+              We design and build custom websites for small businesses. One
+              small team takes you from first sketch to launch, and you see the
+              work at every step.
             </p>
 
             <div className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">

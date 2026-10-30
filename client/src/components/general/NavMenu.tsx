@@ -8,7 +8,7 @@ interface Props {
 }
 
 const menu = [
-  { title: "Home", icon: "home", to: "" },
+  { title: "Home", icon: "home", to: "#" },
   { title: "About", icon: "shield-check", to: "#about" },
   { title: "Projects", icon: "folder-open", to: "#projects" },
   { title: "Contact", icon: "message-circle-text", to: "#contact" },
@@ -25,6 +25,7 @@ export default function NavMenu({ onClose }: Props) {
           title={item.title}
           icon={item.icon as IconName}
           to={item.to}
+          onClose={onClose}
         />
       ))}
       <div className="mt-10 flex flex-1" onClick={onClose}></div>

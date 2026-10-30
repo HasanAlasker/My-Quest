@@ -1,4 +1,4 @@
-import { Gauge, TrendingUp } from "lucide-react";
+import { Eye, KeyRound } from "lucide-react";
 
 export default function Mock() {
   return (
@@ -35,21 +35,23 @@ export default function Mock() {
       {/* Floating proof cards (hidden on small screens to avoid overflow) */}
       <div className="absolute -right-4 top-16 hidden items-center gap-3 rounded-lg border bg-background p-3 shadow-lg sm:flex">
         <span className="grid size-9 place-items-center rounded-md bg-green-500/10 text-green-500">
-          <TrendingUp className="size-4" />
+          <Eye className="size-4" />
         </span>
         <div className="leading-tight">
-          <p className="text-sm font-semibold">+38% conversions</p>
-          <p className="text-xs text-muted-foreground">after relaunch</p>
+          <p className="text-sm font-semibold">See it before launch</p>
+          <p className="text-xs text-muted-foreground">private preview link</p>
         </div>
       </div>
 
       <div className="absolute -left-4 bottom-10 hidden items-center gap-3 rounded-lg border bg-background p-3 shadow-lg sm:flex">
         <span className="grid size-9 place-items-center rounded-md bg-green-500/10 text-green-500">
-          <Gauge className="size-4" />
+          <KeyRound className="size-4" />
         </span>
         <div className="leading-tight">
-          <p className="text-sm font-semibold">Lighthouse 100</p>
-          <p className="text-xs text-muted-foreground">fast on every device</p>
+          <p className="text-sm font-semibold">You own it</p>
+          <p className="text-xs text-muted-foreground">
+            code and domain are yours
+          </p>
         </div>
       </div>
     </div>
