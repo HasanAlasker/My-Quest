@@ -7,8 +7,8 @@ export default function UserNav() {
   const [menu, setMenu] = useState(false);
 
   return (
-    <nav className="flex justify-between relative py-3">
-      <div>logo</div>
+    <nav className=" z-100 flex items-center justify-between sticky top-0 backdrop-blur-lg py-3">
+      <div className="font-bold text-md md:text-xl">AlaskerDev</div>
       <Button onClick={() => setMenu(true)} variant={"outline"}>
         <Menu />
       </Button>

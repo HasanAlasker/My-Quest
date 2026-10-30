@@ -9,14 +9,14 @@ interface Props {
 
 const menu = [
   { title: "Home", icon: "home", to: "" },
-  { title: "About", icon: "info", to: "#about" },
-  { title: "Projects", icon: "projector", to: "#projects" },
-  { title: "Contact", icon: "bubbles", to: "#contact" },
+  { title: "About", icon: "shield-check", to: "#about" },
+  { title: "Projects", icon: "folder-open", to: "#projects" },
+  { title: "Contact", icon: "message-circle-text", to: "#contact" },
 ];
 
 export default function NavMenu({ onClose }: Props) {
   return (
-    <div className="backdrop-blur-sm w-full absolute inset-0 h-svh py-3 flex flex-col">
+    <div className="z-100 bg-background backdrop-blur-3xl w-full absolute inset-0 h-svh py-3 flex flex-col">
       <Button onClick={onClose} variant={"outline"} className={"self-end mb-5"}>
         <X />
       </Button>

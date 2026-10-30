@@ -5,5 +5,5 @@ interface Props {
 }
 
 export default function Screen({ children }: Props) {
-  return <div className="w-[95%] m-auto md:w-[80%]">{children}</div>;
+  return <div className="w-[95%] m-auto md:w-[80%] max-w-6xl">{children}</div>;
 }
