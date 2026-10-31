@@ -25,7 +25,6 @@ export default function InputField({
   name,
   iconName,
   multiline,
-  maxHeight,
 }: Props) {
   const [field, meta, helpers] = useField(name);
   const hasErr = meta.touched && meta.error;
