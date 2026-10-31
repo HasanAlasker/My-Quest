@@ -33,9 +33,12 @@ export default function Hero() {
             </p>
 
             <div className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-              <Button size="lg" className="w-full sm:w-auto">
-                Book free call
-              </Button>
+              <a href="#contact">
+                <Button size="lg" className="w-full sm:w-auto">
+                  Book free call
+                </Button>
+              </a>
+
               <a href="#projects">
                 <Button
                   size="lg"
@@ -48,7 +51,7 @@ export default function Hero() {
             </div>
 
             <p className="mt-4 text-sm text-muted-foreground">
-              20 minutes, no commitment.
+              15 minutes, no commitment.
             </p>
           </div>
 
