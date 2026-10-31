@@ -1,5 +1,4 @@
-// TODO: replace with your real details
-const EMAIL = "hello@alaskerdev.com";
+const EMAIL = "noreply@alasker.dev";
 
 const navLinks = [
   { label: "Projects", href: "#projects" },
